@@ -1,9 +1,10 @@
 import dash
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import html
+from dash import dcc
 
 # dash object
-app = dash.Dash()
+app = dash.Dash(__name__)
+server = app.server
 
 # layout
 app.layout = html.Div([
